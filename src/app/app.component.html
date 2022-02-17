@@ -1,0 +1,19 @@
+<div class="container">
+  <ul id="nav-bar" style="list-style: none; list-style-type: none">
+    <li routerLinkActive="active"><a [routerLink]="['/']">Home</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['category']">category</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['students']">students</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['timer']">Timer</a></li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['categories']">categories</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['dynamic-division']">dynamic-division</a>
+    </li>
+  </ul>
+  
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

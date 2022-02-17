@@ -1,0 +1,18 @@
+ul#nav-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: #343434;
+}
+li {
+  padding: 20px;
+  color: white;
+}
+li:active {
+  background-color: violet;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

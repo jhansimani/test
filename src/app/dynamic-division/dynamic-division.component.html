@@ -1,0 +1,27 @@
+<p>dynamic-division works!</p>
+<div
+  id="dynamic-div"
+  style="
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+  "
+  (wheel)="scroll($event)"
+>
+  <div
+    class="box"
+    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; let index = index"
+    style="
+      background-color: rebeccapurple;
+      width: 200px;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    "
+  >
+    <button style="cursor: pointer" (click)="buttonClicked($event)">
+      Button {{ index }}
+    </button>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<p *ngFor="let item of values">
+  {{ item.status }} {{ item.time | date: "d/M/YYYY, h:mm:ss a" | formatdate }}
+  <!-- {{item.status}} {{item.time}} -->
+</p>

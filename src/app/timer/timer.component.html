@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="component1">
+    <app-component1 [resetvalue]="countdownValue"
+      [countDownTime]="countdownValue"
+      #timer
+      (timepausedat)="timepausedat($event)"
+    ></app-component1>
+  </div>
+  <div class="component2">
+    <app-component2
+      [pausedat]="pausedvalue"
+      (valueEmitted)="valueEmitted($event)"
+      (startEmitted)="startEmitted($event)"
+      (resetEmitted)="resetEmitted($event)"
+      (status)="status($event)"
+      (startTime)="startTime($event)"
+      (pauseTime)="pauseTime($event)"
+      (noOfStarts)="noOfStart($event)"
+      (noOfPauses)="noOfPause($event)"
+    ></app-component2>
+  </div>
+  <div class="component3">
+    <app-component3 [values]="allclickedValues"></app-component3>
+  </div>
+  <div class="component4">
+    <app-component4
+      [noOfStarts]="noOfStarts"
+      [noOfPauses]="noOfPauses"
+    ></app-component4>
+  </div>
+</div>

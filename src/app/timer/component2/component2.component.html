@@ -1,0 +1,14 @@
+<!-- <form [formGroup]="inputForm"> -->
+<div class="container">
+  <label for="timelimit">Enter Timer Limit</label>
+  <input type="text" [(ngModel)]="value" (keyup)="valueposted(value)" />
+  <div class="btn-wrapper">
+    <button (click)="start()">start /Pause</button>
+    <button (click)="reset()">reset</button>
+  </div>
+
+  <div class="pause-start">
+    <p>paused at {{ pausedat }}</p>
+  </div>
+</div>
+<!-- </form> -->

@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <header class="header">
+    <button class="view-icons">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="view-icon"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="view-icon"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+    <div class="drop-wrappper">
+      <button class="price-btn" (click)="togglePriceDropdown()">
+        <span class="price">PRICE LOW TO HIGH</span>
+        <!-- <ion-icon name="caret-down-outline" class="down-icon"></ion-icon> -->
+      </button>
+      <ul class="list" *ngIf="toggled">
+        <li class="list-item">Low to High</li>
+        <li class="list-item">High to Low</li>
+      </ul>
+    </div>
+  </header>
+  <ul class="items-list">
+    <li class="list-item" *ngFor="let item of items">
+      <img src="{{ item.image }}" alt="" />
+      <p>{{ item.name }}</p>
+    </li>
+  </ul>
+</div>
+
+<!-- <div class="container">
+  <div class="header">Header</div>
+  <div class="item" *ngFor="let item of items">
+    <img src={{item.image}} alt="" />
+    <p> {{item.name}}</p> 
+  </div>
+</div> -->

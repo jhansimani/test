@@ -1,0 +1,7 @@
+[
+    {"name": "Books", "category": "stationary"},
+    {"name": "Mobile", "category": "electronics"},
+    {"name": "Wheet", "category": "grocery"},
+    {"name": "smart Watch", "category": "gadgets"}
+    
+]
